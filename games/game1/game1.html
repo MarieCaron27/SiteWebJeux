@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Jump</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="canvas-container">
+        <canvas id="my-canvas"></canvas>
+        <div id="scoreDisplay">
+            Votre meilleur score: <span id="bestScore">0</span><br>
+            Score: <span id="currentScore">0</span>
+        </div>
+    </div>
+    <div>
+        <h1>TOUCHES</h1>
+    </div>
+    <div id="gameOverModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h1>Fin du jeu !</h1>
+            <button id="restartButton">Recommencer</button>
+            <button id="quitButton">Quitter le jeu</button>
+        </div>
+    </div>
+    <script src="game.js" type="module"></script>
+</body>
+</html>

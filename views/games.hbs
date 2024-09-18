@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Jeux</title>
+</head>
+
+<body>
+    <header>
+        <div class="navigation" id="navigation">
+            <nav class="menu">
+                <h1>Zone de jeu</h1>
+                <ul>
+                    <li><a href='/logout'>Me déconnecter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="conteneur-jeux">
+        <h1>À quel jeu souhaitez-vous jouer?</h1>
+
+        <ul>
+            {{#each bestScoresByGame}}
+            <li>
+                <div class="image-jeu">
+                    <img src="/images/game{{@key}}.png" alt="Jeu 1">
+                </div>
+                <div class="infos-jeu">
+                    <div class="meilleurs-scores">
+                        <h3>Meilleurs scores</h3>
+                        <ol>
+                            {{#each this}}
+                            <li>{{this.username}} - {{this.score}}</li>
+                            {{/each}}
+                        </ol>
+                    </div>
+                    <form action="/games/launch_game" method="post">
+                        <input type="hidden" name="gameId" value="{{@key}}">
+                        <button type="submit" class="bouton-lancer">Lancer le jeu</button>
+                    </form>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <p>Copyright &copy; Enter. Design by <strong>Allan, Guillaume, Marie, Martin et Adrien</strong> in 2024.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

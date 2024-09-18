@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Inscription</title>
+</head>
+
+<body>
+    <header>
+        <div class="navigation" id="navigation">
+            <nav class="menu">    
+                <h1>Zone de jeux</h1>
+                <ul>
+                    <li><a href='/'>Accueil</a></li>
+                    <li><a href='/register'>Créer un compte</a></li>
+                    <li><a href='/login'>Me connecter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="inscription">
+            <article id="inscription">
+                <form id="signUpForm" class="signUpForm" action="/auth/register" method="POST">
+                    <h3>Inscription</h3>
+
+                    <div class="signUpForm">
+                        <input type="text" id="username" name="username" placeholder="Mon nom d'utilisateur">
+                        <div id="errorUsername"></div>
+                    </div>
+
+
+                    <div class="signUpForm">
+                        <input type="password" id="userPassword" name="userPassword" placeholder="Mon mot de passe">
+                        <div id="errorPassword"></div>
+                    </div>
+
+                    <div class="signUpForm">
+                        <input type="password" id="userPasswordConfirmed" name="userPasswordConfirmed"
+                            placeholder="Confirmation du mot de passe">
+                        <div id="errorPasswordConfirmed"></div>
+                    </div>
+
+                    <div class="signUpForm">
+                        <input type="submit" value="Valider">
+                    </div>
+
+
+                    <div class="signUpForm">
+                        <p class="link">Vous avez déjà un compte ?</p>
+                        <a href="/login">Je me connecte</a>
+                    </div>
+                </form>
+
+            </article>
+
+            {{#if message}}
+            <h4 class="alert">{{message}}</h4>
+            {{/if}}
+
+        </section>
+    </main>
+
+    <footer>
+        <div id="footer">
+            <p>Copyright &copy; Enter. Design by <strong>Allan, Guillaume, Marie, Martin et Adrien</strong> in 2024.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

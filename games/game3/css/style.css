@@ -1,0 +1,164 @@
+/* Header */
+
+header
+{
+    background-color: palevioletred;
+    border-bottom: 5px solid black;
+}
+
+#myTitle
+{
+    flex-direction: row!important;
+    padding-bottom: 1rem!important;
+    margin-bottom: 1.5rem!important;
+    align-items: center!important;
+    flex-direction: column!important;
+    border-bottom: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    display: flex!important;
+    box-sizing: border-box;
+}
+
+#div
+{
+    display: block;
+}
+
+#myTitle h1
+{
+    text-align:center;
+}
+
+/* Footer */
+
+#footer 
+{
+	clear: both;
+	margin: 10px;
+	border-top: 5px solid black;
+	background: palevioletred;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer p 
+{
+	margin: 0;
+	padding: 50px 0;
+	text-align: center;
+	font-size: smaller;
+	color: black;
+}
+
+#footer a 
+{
+	color: balck;
+}
+
+/*Memory game*/
+
+.btn,
+.animals
+{
+    width:100px;
+    height: 100px;
+    margin:2px;
+}
+
+.container
+{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#result 
+{
+    width: 60%;
+}
+
+#score,
+#timer,
+.btn 
+{
+    font-size: 20px;
+}
+
+#gameGrid 
+{
+    flex-grow: 1;
+}
+
+#gameInfos
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#gameInfos span 
+{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#gameInfos div 
+{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Index : */
+
+#welcomePage 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navigation h1
+{
+    text-align: center;
+}
+
+.images-container 
+{
+    flex: 1;
+    max-width: 30%;
+}
+
+.images-container img 
+{
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.text-container 
+{
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    margin: 20px;
+}
+
+.startButton 
+{
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.startButton:hover 
+{
+    background-color: darkviolet;
+}

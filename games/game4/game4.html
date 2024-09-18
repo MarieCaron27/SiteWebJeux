@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The Legend of Shroom</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="health-bar-container">
+            <div id="health-bar"></div>
+        </div>
+        <div class="info">
+            <div>Score: <span id="score">0</span></div>
+            <div>Round: <span id="round">1</span></div>
+        </div>
+        <!-- <div class="menu">
+            <label for="options">Options:</label>
+            <select id="options">
+                <option value="easy">Easy</option>
+                <option value="medium">Medium</option>
+                <option value="hard">Hard</option>
+            </select>
+        </div> -->
+    </div>
+    <div id="gameOverModal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <h1>Fin du jeu !</h1>
+            <button id="restartButton">Recommencer</button>
+            <button id="quitButton">Quitter le jeu</button>
+        </div>
+    </div>
+    <canvas id="myCanvas" width="960" height="768"></canvas>
+    <script type="module" src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Space Invader</title>
+    <script type="module" src="js/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="gameOver" class="modal" style="display: none; z-index: 3;">
+        <div class="modal-content">
+            <h1>Game Over</h1>
+            <p id="scoreDisplay"></p>
+            <button id="restartButton">Restart</button>
+            <button id="quitButton">Quite</button>
+        </div>
+    </div>
+    <div style="position: relative;">
+        <canvas id="myCanvasBackground" width="700" height="650" 
+            style="position: absolute; left: 0; top: 0; z-index: 1;"></canvas>
+        <canvas id="myCanvas" width="700" height="650"
+            style="position: absolute; left: 0; top: 0; z-index: 2;"></canvas>
+    </div>
+
+</body>
+
+</html>

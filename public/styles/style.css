@@ -1,0 +1,285 @@
+/* Body */
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #1abc9c;
+}
+
+/* Header */
+
+header .navigation {
+    display: flex; /* Utiliser flexbox pour aligner les éléments */
+    justify-content: center; /* Centrer les éléments horizontalement */
+    border-bottom: 5px solid black;
+}
+
+header .menu {
+    list-style-type: none; /* Supprimer les puces de liste */
+    padding: 0; /* Supprimer le remplissage par défaut */
+}
+
+header .menu h1 {
+    color:#000;
+    font-size: 80px;
+}
+
+header .menu li {
+    display: inline-block; /* Afficher les éléments en ligne */
+    margin: 0 10px; /* Espacement entre les éléments */
+}
+
+header .menu li a {
+    text-decoration: none; /* Supprimer le soulignement des liens */
+    color: #000; /* Couleur du texte */
+    padding: 5px 10px; /* Espacement interne */
+    border: 1px solid #000; /* Bordure */
+    border-radius: 5px; /* Bordures arrondies */
+}
+
+header .menu li a:hover {
+    background-color: #000; /* Couleur de fond au survol */
+    color: #fff; /* Couleur du texte au survol */
+}
+
+/* Titles */
+
+h1,h2,h3
+{
+    text-align: center;
+}
+
+h4
+{
+    text-align: center;
+    color: red;
+}
+
+
+li
+{
+    list-style: none;
+}
+
+/* Sign Up Form */
+
+#inscription
+{
+    margin-right: 400px;
+    margin-left: 400px;
+    border: solid thick black;
+    margin-top: 10px;
+}
+
+.signUpForm
+{
+    position:relative;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+}
+
+.inscription input[type="text"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.inscription input[type="mail"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.inscription input[type="password"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.inscription input[type="sumbit"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+/* Log In Form */
+
+#connexion
+{
+    margin-right: 400px;
+    margin-left: 400px;
+    border: solid thick black;
+    margin-top: 10px;
+}
+
+.logInForm
+{
+    position:relative;
+    box-sizing: border-box;
+    text-align: center;
+    margin: 20px;
+}
+
+.connexion input[type="text"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.connexion input[type="password"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+.connexion input[type="sumbit"] 
+{
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    border-width: fit-content;
+    text-align: center;
+}
+
+/* Welcome page */
+
+#welcomePage {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Centrage vertical */
+    flex-wrap: wrap;
+}
+
+.images-container {
+    flex: 1;
+    max-width: 100%; /* Ajuster la largeur des images */
+}
+
+.images-container img {
+    max-width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+
+.text-container {
+    flex: 1;
+    max-width: 600px;
+    text-align: center;
+    margin: 20px; /* Ajouter une marge pour l'espace autour du texte */
+}
+
+.startButton {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none; /* Pour supprimer le soulignement */
+}
+
+.startButton:hover {
+    background-color: darkviolet; /* Couleur au survol */
+}
+
+/* Game page */
+
+/* Style de la liste */
+.conteneur-jeux ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style de chaque jeu */
+.conteneur-jeux ul {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.conteneur-jeux li {
+    margin : 10px;
+}
+
+/* Style de l'image du jeu */
+.conteneur-jeux .image-jeu {
+    display: flex; /* Utiliser Flexbox pour centrer l'image */
+    justify-content: center; /* Centrer l'image horizontalement */
+    align-items: center; /* Centrer l'image verticalement */
+}
+
+.conteneur-jeux .image-jeu img {
+    max-width:max-content;
+    height: auto; /* Hauteur automatique pour conserver les proportions */
+}
+
+/* Style des informations du jeu */
+
+
+/* Style des meilleurs scores */
+.meilleurs-scores {
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+/* Style du bouton pour lancer le jeu */
+.bouton-lancer {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transition fluide */
+}
+
+.bouton-lancer:hover {
+    background-color: #0056b3;
+}
+
+
+/* Footer */
+
+#footer 
+{
+	clear: both;
+	margin: 10px;
+	border-top: 5px solid black;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer p 
+{
+	margin: 0;
+	padding: 50px 0;
+	text-align: center;
+	font-size: smaller;
+	color: black;
+}
+
+#footer a 
+{
+	color: balck;
+}
